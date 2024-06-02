@@ -269,6 +269,7 @@ button:hover{
   padding: 30px 20px; /*top bottom*/
   color:#ddd;
   cursor:pointer;
+  font-size:10px;
   /*box-shadow:8px 18px 3px #000000;*/
   
 }
