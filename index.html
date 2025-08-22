@@ -11,7 +11,7 @@
 <body>
   <div class="hero" id="hero">
     <nav>
-      <img src="som_logo.png" alt="">
+      <img class="som_logo" src="som_logo.png" alt="">
       <ul>
         <li><a href="#hero">HOME</a></li>
         <li><a href="#abt">ABOUT</a></li>
@@ -19,45 +19,52 @@
         <li><a href="#MySkills">SKILLS</a></li>
         <li><a href="#contactForm">LET'S TALK</a></li>
       </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
     </nav>
-    <div class="detail">
-      <h1>I, m Soumajit <span>Dutta</span></h1>
-      <p>I am a BCA Undergrad. This is my official portfolio website to<br> show all
-        Details and work experiance
-      </p>
-      <a href="https://drive.google.com/file/d/1e8IZu3x80lGxAaYB4K-ZTDHwnRZn7Rmk/view?usp=drivesdk">DOWNLOAD CV FILE</a>
+    <div class="introduction">
+      <div class="detail">
+        <h1>I, m Soumajit <span>Dutta</span></h1>
+        <p>I am a BCA Undergrad. This is my official portfolio website to<br> show all
+          Details and work experiance
+        </p>
+        <a href="https://drive.google.com/file/d/1e8IZu3x80lGxAaYB4K-ZTDHwnRZn7Rmk/view?usp=drivesdk">DOWNLOAD CV
+          FILE</a>
+      </div>
+      <div class="images">
+
+        <img src="profile-bg.png" class="shape">
+
+        <img src="som.png" class="boy">
+      </div>
     </div>
-    <div class="images">
-      
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmtpwXz7N9u9vNWCv47kShuN1YhrjhrgQDSAJqMtY6nuQongHIEbOBuss&s=10" class="shape">
-      
-    <img src="som.png" class="boy">
-    </div>
+
   </div>
-  
+
   <!--about section-->
   <section class="about" id="abt">
     <div class="main">
       <img src="som2.jpg">
       <div class="about-text">
         <h2 id="about">About Me</h2>
-          <h5>Devloper <span id="coder">& Coder</span></h5>
-          <p>I am a Programmer and front and web developer. I can provide clean code in pixel perfect design and can also make website more and more interactive<br>
-            I am a persuing BCA from Arka Jain University and have a keen interest in Web Dev and Data Science.<br>
-            Looking for internships and would be glad to interact with esteemed institution or individual.
-          </p>
-          <button type="button">Let's Talk</button>
+        <h5>Devloper <span id="coder">& Coder</span></h5>
+        <p>I am a Programmer and Full Stack web developer. I can provide clean code in pixel perfect design and can also
+          make website more and more interactive<br>
+          I am a persuing BCA from Arka Jain University and have a keen interest in Web Dev and Data Science.<br>
+          Looking for internships and would be glad to interact with esteemed institution or individual.
+        </p>
+        <button type="button">Let's Talk</button>
       </div>
     </div>
   </section>
-  
+
   <!--service section-->
-  
+
   <div class="inner" id="MySkills">
     <div class="header">
       <h1>My Skills</h1>
     </div>
-    
+
     <div class="container">
       <div class="skill-box">
         <div class="skill-title">
@@ -68,90 +75,90 @@
         </div>
         <p>I have a basic Knowledge of HTML and regularly trying to learn more</p>
       </div>
-        <div class="skill-box">
-          <div class="skill-title">
-            <div class="img">
-              <img src="Python.png" class="skill-icon">
-            </div>
-            <h3>PYTHON</h3>
+      <div class="skill-box">
+        <div class="skill-title">
+          <div class="img">
+            <img src="Python.png" class="skill-icon">
           </div>
-          <p>I have an Intermediate knowledge of Python. I have worked with Libraries such as Numpy and Pandas </p>
+          <h3>PYTHON</h3>
         </div>
-        
-        <div class="skill-box">
-          <div class="skill-title">
-            <div class="img">
-              <img src="css.png" class="skill-icon">
-            </div>
-            <h3>CSS</h3>
-          </div>
-          <p>I am currently learning CSS and trying to implement it using p
-          projects.</p>
-        </div>
-        
-        <div class="skill-box">
-          <div class="skill-title">
-            <div class="img">
-              <img src="c_language.png" class="skill-icon">
-            </div>
-            <h3>C</h3>
-          </div>
-          <p>C is the language which is taught in 1st sem of my college</p>
-        </div>
-        
-        <div class="skill-box">
-          <div class="skill-title">
-            <div class="img">
-              <img src="cpp.png" class="skill-icon">
-            </div>
-            <h3>C++</h3>
-          </div>
-          <p>I have been doing my OOPS using C++ in my 2nd sem of my college</p>
-        </div>
-        
-        <div class="skill-box">
-          <div class="skill-title">
-            <div class="img">
-              <img src="SQL1.png" class="skill-icon">
-            </div>
-            <h3>SQL</h3>
-          </div>
-          <p>I have the Knowledge of DDL and DML Commands of SQL</p>
-        </div>
-        
-        
-    </div>
-  </div>
-  
-  <div class="forest_bg">
-  <div class="wrapper">
-    <div class="ctitle">
-      <h1>Contact us</h1>
-    </div>
-    
-    <div class="contact-form" id="contactForm">
-      <div class="input-feilds">
-        <form action="https://formspree.io/f/xeqywyjd" method="POST">
-        <input type="text" class="input" placeholder="Name" name="name" required>
-        <input type="email" name="email" class"input" placeholder="Email Address" required>
-        <input type="number" class="input" placeholder="Phone" name="phone" required>
-        <input type="text" class="input" placeholder="Subject" name="subject" required>
-        
-         <div class="msg">
-          <textarea placeholder="Message" name="message"></textarea>
-          <button type="submit" class="btn">Send</button>
-          </div>
-        </form>
+        <p>I have an Intermediate knowledge of Python. I have worked with Libraries such as Numpy and Pandas </p>
       </div>
-     
+
+      <div class="skill-box">
+        <div class="skill-title">
+          <div class="img">
+            <img src="css.png" class="skill-icon">
+          </div>
+          <h3>CSS</h3>
+        </div>
+        <p>I am currently learning CSS and trying to implement it using p
+          projects.</p>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-title">
+          <div class="img">
+            <img src="c_language.png" class="skill-icon">
+          </div>
+          <h3>C</h3>
+        </div>
+        <p>C is the language which is taught in 1st sem of my college</p>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-title">
+          <div class="img">
+            <img src="cpp.png" class="skill-icon">
+          </div>
+          <h3>C++</h3>
+        </div>
+        <p>I have been doing my OOPS using C++ in my 2nd sem of my college</p>
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-title">
+          <div class="img">
+            <img src="SQL1.png" class="skill-icon">
+          </div>
+          <h3>SQL</h3>
+        </div>
+        <p>I have the Knowledge of DDL and DML Commands of SQL</p>
+      </div>
+
+
     </div>
   </div>
+
+  <div class="forest_bg">
+    <div class="wrapper">
+      <div class="ctitle">
+        <h1>Contact us</h1>
+      </div>
+
+      <div class="contact-form" id="contactForm">
+        <div class="input-feilds">
+          <form action="https://formspree.io/f/xeqywyjd" method="POST">
+            <input type="text" class="input" placeholder="Name" name="name" required>
+            <input type="email" name="email" class="input" placeholder="Email Address" required>
+            <input type="number" class="input" placeholder="Phone" name="phone" required>
+            <input type="text" class="input" placeholder="Subject" name="subject" required>
+
+            <div class="msg">
+              <textarea placeholder="Message" name="message"></textarea>
+              <button type="submit" class="btn">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
   </div> <!--forest bg-->
-  
-  
+
+
   <!--footer-->
-  
-    <div class="f">
+
+  <div class="f">
     <footer>
       <!--
       <div class="waves">
@@ -164,7 +171,8 @@
       <ul class="social_icon">
         <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        <li><a href="https://www.linkedin.com/in/soumajit-dutta-a708ab297?trk=contact-info"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/soumajit-dutta-a708ab297?trk=contact-info"><ion-icon
+              name="logo-linkedin"></ion-icon></a></li>
         <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
       </ul>
       <ul class="menu">
@@ -179,6 +187,16 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </div>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navList = document.querySelector('nav ul');
+
+    toggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
 </body>
 
 </html>
