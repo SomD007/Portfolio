@@ -796,7 +796,7 @@ footer p{
   nav ul.active {
     display: flex;
     background-color: rgba(0, 0, 0, 0.4);
-    width:30%;
+    width:50%;
     height:300px;
     left:50%;
 
