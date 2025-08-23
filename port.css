@@ -779,7 +779,7 @@ footer p{
 }
 
 /* Responsive nav menu for mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 468px) {
   nav ul {
     display: none;
     flex-direction: column;
