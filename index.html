@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="port.css">
+  <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+      id="paperCSS"
+    />
 </head>
 
 <body>
@@ -13,13 +18,14 @@
   
   <div class="hero" id="hero">
     <nav>
-      <img class="som_logo" src="som_logo.png" alt="">
+      <img class="som_logo no-border" src="som_logo.png" alt="">
       <ul>
         <li><a href="#hero">HOME</a></li>
         <li><a href="#abt">ABOUT</a></li>
         <li><a href="">PORTFOLIO</a></li>
         <li><a href="#MySkills">SKILLS</a></li>
         <li><a href="#contactForm">LET'S TALK</a></li>
+        <li id="ui-toggle"><a href="#">Paper UI</a></li>
       </ul>
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
 
@@ -35,9 +41,9 @@
       </div>
       <div class="images">
 
-        <img src="profile-bg.png" class="shape">
+        <img src="profile-bg.png" class="shape no-border">
 
-        <img src="som.png" class="boy">
+        <img src="profile2.png" class="boy no-border">
       </div>
     </div>
 
@@ -71,7 +77,7 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="html1.png" class="skill-icon">
+            <img src="html1.png" class="skill-icon no-border">
           </div>
           <h3>HTML 5</h3>
         </div>
@@ -80,7 +86,7 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="Python.png" class="skill-icon">
+            <img src="Python.png" class="skill-icon no-border">
           </div>
           <h3>PYTHON</h3>
         </div>
@@ -90,7 +96,7 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="css.png" class="skill-icon">
+            <img src="css.png" class="skill-icon no-border">
           </div>
           <h3>CSS</h3>
         </div>
@@ -101,7 +107,7 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="c_language.png" class="skill-icon">
+            <img src="c_language.png" class="skill-icon no-border">
           </div>
           <h3>C</h3>
         </div>
@@ -111,7 +117,7 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="cpp.png" class="skill-icon">
+            <img src="cpp.png" class="skill-icon no-border">
           </div>
           <h3>C++</h3>
         </div>
@@ -121,7 +127,7 @@
       <div class="skill-box">
         <div class="skill-title">
           <div class="img">
-            <img src="SQL1.png" class="skill-icon">
+            <img src="SQL1.png" class="skill-icon no-border">
           </div>
           <h3>SQL</h3>
         </div>
@@ -141,14 +147,14 @@
       <div class="contact-form" id="contactForm">
         <div class="input-feilds">
           <form action="https://formspree.io/f/xeqywyjd" method="POST">
-            <input type="text" class="input" placeholder="Name" name="name" required>
-            <input type="email" name="email" class="input" placeholder="Email Address" required>
-            <input type="number" class="input" placeholder="Phone" name="phone" required>
-            <input type="text" class="input" placeholder="Subject" name="subject" required>
+            <input type="text" class="input" placeholder="Name" name="name" required><br>
+            <input type="email" name="email" class="input" placeholder="Email Address" required><br>
+            <input type="number" class="input" placeholder="Phone" name="phone" required><br>
+            <input type="text" class="input" placeholder="Subject" name="subject" required><br>
 
             <div class="msg">
-              <textarea placeholder="Message" name="message"></textarea>
-              <button type="submit" class="btn">Send</button>
+              <textarea rows="20" cols="5" placeholder="Message" name="message"></textarea>
+              <button type="submit" class="btn-success-outline">Send</button>
             </div>
           </form>
         </div>
@@ -156,6 +162,14 @@
       </div>
     </div>
   </div> <!--forest bg-->
+
+
+
+<div class="paper container">
+  <h1>Paper Text</h1>
+</div>
+
+
 
 
   <!--footer-->
@@ -197,6 +211,35 @@
     toggle.addEventListener('click', () => {
       navList.classList.toggle('active');
     });
+
+
+    // const stylesheetToRemove = document.querySelector('link[href="path/to/my-styles.css"]'); // If targeting by href
+    const paperCSS = document.getElementById("paperCSS");
+    const uiToggle = document.getElementById("ui-toggle");
+
+    let temp = 1;
+    
+    uiToggle.addEventListener("click",() => {
+      
+      if(temp === 0){
+        temp = 1;
+        console.log("UI Enable");
+        // paperCSS.parentNode.removeChild(paperCSS);
+        //paperCSS.add();
+        paperCSS.disabled = false;
+        uiToggle.textContent = "Modern UI"
+      }
+      else{
+        temp = 0;
+        console.log("UI Disable");
+        // paperCSS.parentNode.removeChild(paperCSS);
+        paperCSS.disabled = true;
+        uiToggle.textContent = "Paper UI"
+        //paperCSS.remove();
+      }
+      
+    });
+
   </script>
 
 </body>

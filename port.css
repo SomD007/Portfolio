@@ -85,7 +85,7 @@ span{
   padding: 10px 18px;
   text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
   display: inline-block;
   margin: 30px 0;
   border-radius: 5px;
@@ -94,7 +94,7 @@ span{
 .detail:hover a{
   background:transparent;
   border-color:black;
-  color:black;
+  color:black !important;
   border: 2px solid #D19200;
 }
 
@@ -397,7 +397,7 @@ skill-title:before {
 }
 
 .input-feilds .msg{
-  width:48%;
+  width:100%;
 }
 
 .input-feilds, input, .msg textarea{
@@ -441,8 +441,9 @@ skill-title:before {
   text-transform:uppercase;
   font-family:'Franklin Gothic Medium', 'Arial Narrow';
   font-size:bold;
-  width:140px;
-  height:60px;
+  width:50px;
+  height:30px;
+  margin-left:10px;
 }
 
 .btn:hover{
@@ -477,16 +478,19 @@ footer{
 footer .social_icon, 
 footer .menu{
   position:relative;
-  display:flex;
-  justify-items:center;
-  align-items:center;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
   margin:10px 0;
-  flex-wrap:wrap;
+  flex-wrap:wrap !important;
 }
 
 footer .social_icon li,
 footer .menu li{
   list-style:none;
+  justify-self: center !important;
+  align-items: center !important;
+  margin:10px 15px;
 }
 
 footer .social_icon li a,
@@ -641,7 +645,7 @@ footer p{
 }
 
 /* For mobile phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 486px) {
   nav {
     width: 95%;
     padding: 10px 0;
@@ -792,9 +796,9 @@ footer p{
   nav ul.active {
     display: flex;
     background-color: rgba(0, 0, 0, 0.4);
-    width:40%;
+    width:30%;
     height:300px;
-    left:70%;
+    left:50%;
 
   }
 
